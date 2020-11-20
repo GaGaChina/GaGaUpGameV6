@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="UpGameSkill" packageUrl="cn.wjj.upgame.data" note="UpGame技能调用表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="id" type="uint" defaultVar="0" note="技能信息链接表id" pointer="1"/>
+    <item name="bulletId" type="uint" defaultVar="0" note="子弹Id : 如果0表示不是子弹，其他标识这个会绑定到的子弹，如果切换目标类型了就不需要子弹(比如攻击敌人同时给自己加buff此时不需要子弹)"/>
+    <item name="effectId" type="uint" defaultVar="0" note="技能作用效果Id : 技能作用效果的id，这个效果可能是一个伤害效果，也可能会是一个持续范围型伤害，也可能会附加一个状态"/>
+	<item name="hitEffectDirec" type="uint" defaultVar="0" note="特效方向 : 0不使用任何角度,1跟随子弹的角度"/>
+  </varsList>
+</data>

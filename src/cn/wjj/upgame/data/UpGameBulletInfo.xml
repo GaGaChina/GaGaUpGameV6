@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="UpGameBulletInfo" packageUrl="cn.wjj.upgame.data" note="子弹数据模型" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="id" type="uint" defaultVar="0" note="子弹Id" pointer="1"/>
+    <item name="alphaTime" type="uint" defaultVar="0" note="透明时间 : 子弹发射出时的透明时间；单位：毫秒"/>
+    <item name="type" type="uint" defaultVar="0" note="子弹类型 : 1-普通，2-扇形散弹"/>
+    <item name="angle" type="uint" defaultVar="0" note="散弹发射角度 : 多颗子弹发射时之间的夹角（中心子弹的位置与目标中心点有关）"/>
+    <item name="count" type="uint" defaultVar="0" note="发射弹数 : 一次发射出散弹数，角度x弹数若=360，则弹数可为偶数，否则为奇数"/>
+    <item name="pathId" type="uint" defaultVar="0" note="特效Id"/>
+    <item name="pathType" type="uint" defaultVar="0" note="特效类型 : 0-无图,1-U2,2-PNG,3-JPG"/>
+    <item name="isRotate" type="Boolean" defaultVar="false" note="特效是否需要旋转 : 特效是否需要根据方向旋转,0不需要,1需要"/>
+    <item name="speed" type="uint" defaultVar="0" note="子弹最大速度 : 单位像素/秒"/>
+    <item name="startSpeed" type="uint" defaultVar="0" note="子弹启动速度 : 单位像素/秒"/>
+    <item name="acceleration" type="uint" defaultVar="0" note="子弹加速度 : 单位像素/秒平方"/>
+    <item name="track" type="uint" defaultVar="0" note="轨迹类型 : 0-无弹道，1-基本弹道（匀速），2-基本弹道（加速）；3-碰撞弹道（匀速）；4-碰撞弹道（加速）；5-抛物线弹道，6-穿透弹道（匀速），7-穿透弹道（加速），8-光线弹道（激光）"/>
+	<item name="missileRangeEffect" type="uint" defaultVar="0" note="落地特效ID"/>
+    <item name="radius" type="uint" defaultVar="0" note="子弹半径 : 该字段数值由美术提供"/>
+    <item name="hitTimes" type="uint" defaultVar="0" note="子弹穿透目标数量上限 : 只有轨迹类型为6、7的时候穿透数量才有效"/>
+	<item name="angle1" type="uint" defaultVar="0" note="散弹偏移角度"/>
+  </varsList>
+</data>

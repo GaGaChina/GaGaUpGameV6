@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="UpGameSkillAction" packageUrl="cn.wjj.upgame.data" note="UpGame技能动作数据" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="id" type="uint" defaultVar="0" note="技能动作Id : 技能动作的id，这个id在技能表中填写，与相关的技能进行关联表示该技能释放时会使用的动作；" pointer="1"/>
+    <item name="circle" type="Boolean" defaultVar="false" note="是否可以循环 : 这个技能动作是否有循环，是循环的技能动作在攻击时会循环播放一段循环的动画；注：循环的次数需要通过技能数据确定"/>
+    <item name="start" type="uint" defaultVar="0" note="循环开始时间点 : 循环动画开始的时间点，这个时间点是一个动作中的一个时间点"/>
+    <item name="end" type="uint" defaultVar="0" note="循环结束时间点 : 循环动画结束的时间点，"/>
+    <item name="combo" type="Boolean" defaultVar="false" note="是否为组合动作 : 是组合动作的动作，会有多个打击时间和不同的打击点，例如劳拉的双枪攻击就是两个不同的攻击时间点和两个发射点（参照刀塔传奇里面熊猫的大招）；如果为否则只有攻击时间点1会生效"/>
+    <item name="playTime" type="uint" defaultVar="0" note="技能总时间（毫秒） : 角色的普攻技能总时间填写角色卡牌表“攻击间隔”+100，大招总时间看编辑器总时间"/>
+    <item name="lockPlay" type="Boolean" defaultVar="false" note="是否会强制播完 : 0-否,1-是，填1则该动作一定会按技能总时间播放完毕，期间玩家操作被屏蔽无效。"/>
+    <item name="time1" type="uint" defaultVar="0" note="攻击时间点1 : 这个动作第一次子弹发出的时间点"/>
+    <item name="time1point" type="uint" defaultVar="0" note="时间点1所用发射点 : 这个动作第一发自动发射所使用的子弹发射点（目前最多有两个发射点，劳拉的双枪）"/>
+    <item name="time1skill" type="uint" defaultVar="0" note="时间点1发射的效果链接的id : 本次发射所用子弹的id"/>
+    <item name="goalType1" type="uint" defaultVar="0" note="时间点1目标类型 : 0-当前目标，1-己方血少，2-敌方血少，3-随机位置，4-当前方向，5-自己"/>
+    <item name="time2" type="uint" defaultVar="0" note="攻击时间点2"/>
+    <item name="time2point" type="uint" defaultVar="0" note="时间点2所用发射点"/>
+    <item name="time2skill" type="uint" defaultVar="0" note="时间点2发射的效果链接的id"/>
+    <item name="goalType2" type="uint" defaultVar="0" note="时间点2目标类型"/>
+    <item name="time3" type="uint" defaultVar="0" note="攻击时间点3"/>
+    <item name="time3point" type="uint" defaultVar="0" note="时间点3所用发射点"/>
+    <item name="time3skill" type="uint" defaultVar="0" note="时间点3发射的效果链接的id"/>
+    <item name="goalType3" type="uint" defaultVar="0" note="时间点3目标类型"/>
+    <item name="time4" type="uint" defaultVar="0" note="攻击时间点4"/>
+    <item name="time4point" type="uint" defaultVar="0" note="时间点4所用发射点"/>
+    <item name="time4skill" type="uint" defaultVar="0" note="时间点4发射的效果链接的id"/>
+    <item name="goalType4" type="uint" defaultVar="0" note="时间点4目标类型"/>
+    <item name="time5" type="uint" defaultVar="0" note="攻击时间点5"/>
+    <item name="time5point" type="uint" defaultVar="0" note="时间点5所用发射点"/>
+    <item name="time5skill" type="uint" defaultVar="0" note="时间点5发射的效果链接的id"/>
+    <item name="goalType5" type="uint" defaultVar="0" note="时间点5目标类型"/>
+    <item name="shaketime1" type="uint" defaultVar="0" note="屏幕震动时间点1"/>
+    <item name="shaketype1" type="uint" defaultVar="0" note="时间点1时的震动类型 : 1全地图震动，2地图内的层，3层和地图一起震"/>
+    <item name="shakeLength1" type="uint" defaultVar="0" note="时间点1时的震动持续时间（毫秒）"/>
+    <item name="shakeX1" type="uint" defaultVar="0" note="时间点1时的震动x轴比例值"/>
+    <item name="shakeY1" type="uint" defaultVar="0" note="时间点1时的震动y轴比例值"/>
+    <item name="shaketime2" type="uint" defaultVar="0" note="屏幕震动时间点2"/>
+    <item name="shaketype2" type="uint" defaultVar="0" note="时间点2时的震动类型 : 1全地图震动，2地图内的层，3层和地图一起震"/>
+    <item name="shakeLength2" type="uint" defaultVar="0" note="时间点2时的震动持续时间（毫秒）"/>
+    <item name="shakeX2" type="uint" defaultVar="0" note="时间点2时的震动x轴比例值"/>
+    <item name="shakeY2" type="uint" defaultVar="0" note="时间点2时的震动y轴比例值"/>
+    <item name="shaketime3" type="uint" defaultVar="0" note="屏幕震动时间点3"/>
+    <item name="shaketype3" type="uint" defaultVar="0" note="时间点3时的震动类型 : 1全地图震动，2地图内的层，3层和地图一起震"/>
+    <item name="shakeLength3" type="uint" defaultVar="0" note="时间点3时的震动持续时间（毫秒）"/>
+    <item name="shakeX3" type="uint" defaultVar="0" note="时间点3时的震动x轴比例值"/>
+    <item name="shakeY3" type="uint" defaultVar="0" note="时间点3时的震动y轴比例值"/>
+    <item name="shaketime4" type="uint" defaultVar="0" note="屏幕震动时间点4"/>
+    <item name="shaketype4" type="uint" defaultVar="0" note="时间点4时的震动类型 : 1全地图震动，2地图内的层，3层和地图一起震"/>
+    <item name="shakeLength4" type="uint" defaultVar="0" note="时间点4时的震动持续时间（毫秒）"/>
+    <item name="shakeX4" type="uint" defaultVar="0" note="时间点4时的震动x轴比例值"/>
+    <item name="shakeY4" type="uint" defaultVar="0" note="时间点4时的震动y轴比例值"/>
+    <item name="shaketime5" type="uint" defaultVar="0" note="屏幕震动时间点5"/>
+    <item name="shaketype5" type="uint" defaultVar="0" note="时间点5时的震动类型 : 1全地图震动，2地图内的层，3层和地图一起震"/>
+    <item name="shakeLength5" type="uint" defaultVar="0" note="时间点5时的震动持续时间（毫秒）"/>
+    <item name="shakeX5" type="uint" defaultVar="0" note="时间点5时的震动x轴比例值"/>
+    <item name="shakeY5" type="uint" defaultVar="0" note="时间点5时的震动y轴比例值"/>
+  </varsList>
+</data>

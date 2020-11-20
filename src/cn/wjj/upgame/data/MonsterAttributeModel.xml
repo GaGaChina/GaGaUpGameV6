@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="MonsterAttributeModel" packageUrl="cn.wjj.upgame.data" note="怪物属性表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="Id" type="int" defaultVar="0" note="怪物id" pointer="1"/>
+    <item name="Type" type="int" defaultVar="0" note="类型"/>
+    <item name="Card" type="int" defaultVar="0" note="怪物形象 : 模型ID，取自模型数据表"/>
+    <item name="Boss" type="int" defaultVar="0" note="是否为boss : 是否为boss、用于显示，boss类的卡牌在战斗中会以大卡牌的样式"/>
+    <item name="Att" type="int" defaultVar="0" note="攻击"/>
+    <item name="rate" type="int" defaultVar="0" note="标准攻击间隔"/>
+    <item name="def" type="int" defaultVar="0" note="防御"/>
+    <item name="Hp" type="int" defaultVar="0" note="生命"/>
+    <item name="attsp" type="int" defaultVar="0" note="攻击间隔"/>
+    <item name="Sp" type="int" defaultVar="0" note="移动速度"/>
+    <item name="Hit" type="int" defaultVar="0" note="命中"/>
+    <item name="Dod" type="int" defaultVar="0" note="回避"/>
+    <item name="seal" type="int" defaultVar="0" note="封命"/>
+    <item name="sealres" type="int" defaultVar="0" note="封抗"/>
+    <item name="lethality" type="int" defaultVar="0" note="暴击率"/>
+    <item name="tenacity" type="int" defaultVar="0" note="韧性"/>
+    <item name="Finjury" type="int" defaultVar="0" note="暴击伤害值"/>
+    <item name="finjuryres" type="int" defaultVar="0" note="暴击抵抗"/>
+    <item name="attX" type="int" defaultVar="0" note="攻击增强"/>
+    <item name="hpX" type="int" defaultVar="0" note="生命增强"/>
+    <item name="attspX" type="int" defaultVar="0" note="攻速修正"/>
+    <item name="cureX" type="int" defaultVar="0" note="治疗增强"/>
+    <item name="defx" type="int" defaultVar="0" note="防御比例"/>
+    <item name="betreated" type="int" defaultVar="0" note="被治疗比例"/>
+    <item name="Regenerationvalue" type="int" defaultVar="0" note="再生值"/>
+    <item name="initialcdreduce1" type="int" defaultVar="0" note="技能1初始cd降低值"/>
+    <item name="initialcdreduce2" type="int" defaultVar="0" note="技能2初始cd降低值"/>
+    <item name="initialcdreduce3" type="int" defaultVar="0" note="技能3初始cd降低值"/>
+    <item name="initialcdreduce4" type="int" defaultVar="0" note="技能4初始cd降低值"/>
+    <item name="cdreduce1" type="int" defaultVar="0" note="技能1cd降低值"/>
+    <item name="cdreduce2" type="int" defaultVar="0" note="技能2cd降低值"/>
+    <item name="cdreduce3" type="int" defaultVar="0" note="技能3cd降低值"/>
+    <item name="cdreduce4" type="int" defaultVar="0" note="技能4cd降低值"/>
+    <item name="ai" type="int" defaultVar="0" note="AI类型"/>
+    <item name="look" type="int" defaultVar="0" note="视野范围"/>
+    <item name="sensitive" type="int" defaultVar="0" note="敏感范围"/>
+    <item name="Pskillid" type="int" defaultVar="0" note="普通技能id"/>
+    <item name="Gskillid" type="int" defaultVar="0" note="高级技能1id"/>
+    <item name="Gskillid2" type="int" defaultVar="0" note="高级技能2id"/>
+    <item name="Gskillid3" type="int" defaultVar="0" note="高级技能3id"/>
+    <item name="Gskillid4" type="int" defaultVar="0" note="高级技能4id"/>
+    <item name="hpdisplaytype" type="int" defaultVar="0" note="血条显示类型 : 未使用，0-不显示，1-被攻击时显示，2-总是显示，3-固定显示在屏幕最顶端"/>
+    <item name="hpdisplaynum" type="int" defaultVar="0" note="血条显示层数 : 主要用于显示boss的血量，表示血量最多会显示为几层"/>
+    <item name="monsterid1" type="int" defaultVar="0" note="召唤怪物id1 : 该怪物召唤出的怪物1的id"/>
+    <item name="monsterid2" type="int" defaultVar="0" note="召唤怪物id2 : 该怪物召唤出的怪物2的id"/>
+    <item name="actionStart" type="int" defaultVar="0" note="是否直接走入场景 : 0怪刷出后直接走入场景，1怪被激活后再走入场景"/>
+	<item name="first" type="int" defaultVar="0" note="初始角度 : 默认-1（程序自动设为90度），生效填0-360的角度"/>
+	<item name="callTotal" type="int" defaultVar="0" note="召唤怪物数量上限"/>
+  </varsList>
+</data>

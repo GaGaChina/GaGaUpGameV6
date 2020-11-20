@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="SkillActiveModel" packageUrl="cn.wjj.upgame.data" note="主动技能" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="id" type="uint" defaultVar="0" note="技能id"/>
+    <item name="Name" type="uint" defaultVar="0" note="技能名称id : 技能的名称id，用于显示"/>
+    <item name="describe" type="uint" defaultVar="0" note="技能描述id : 技能的描述id，用于显示"/>
+    <item name="describe1" type="uint" defaultVar="0" note="技能成长描述1id"/>
+    <item name="effect1" type="uint" defaultVar="0" note="初始效果值1 : 显示效果，表示该技能0级的数值"/>
+    <item name="effectup1" type="uint" defaultVar="0" note="升级效果值1 : 显示效果，表示该技能每升一级所增加的数值"/>
+    <item name="geshi1" type="uint" defaultVar="0" note="效果值格式1 : 1-正常数值，2-百分比（计算出的数字/100）"/>
+    <item name="describe2" type="uint" defaultVar="0" note="技能成长描述2id : 一个技能有2个成长效果时才用到描述2"/>
+    <item name="effect2" type="uint" defaultVar="0" note="初始效果值2 : 显示效果，表示该技能0级的数值"/>
+    <item name="effectup2" type="uint" defaultVar="0" note="升级效果值2 : 显示效果，表示该技能每升一级所增加的数值"/>
+    <item name="geshi2" type="uint" defaultVar="0" note="效果值格式2 : 1-正常数值，2-百分比（计算出的数字/100）"/>
+    <item name="lvUpType" type="uint" defaultVar="0" note="升级类型 : 技能升级所使用的花费曲线类型，该表中会填写相关的消费；"/>
+    <item name="image" type="uint" defaultVar="0" note="技能图标"/>
+    <item name="type" type="uint" defaultVar="0" note="技能类型 : 是普通攻击或者是普通技能，1-普攻，2-普技"/>
+    <item name="actionId" type="uint" defaultVar="0" note="技能动作id"/>
+    <item name="range" type="uint" defaultVar="0" note="射程 : 单位像素，人的技能射程填1手动能放出来，怪的技能填1自动则放不出来"/>
+    <item name="MinimumRange" type="uint" defaultVar="0" note="最小射程 : 技能的最小射程，即射击盲区"/>
+    <item name="goalType" type="uint" defaultVar="0" note="目标类型 : 0-当前目标，1-己方血少，2-敌方血少，3-随机位置，4-当前方向，5-自己，6-随机目标，120-己方血在20%以下,将对射程范围内己方全体治疗(血液的比例, 射程范围内出现血少于20%目标)"/>
+    <item name="count" type="uint" defaultVar="0" note="目标数量 : 目标类型为4、5时，该字段无效"/>
+    <item name="alarm" type="uint" defaultVar="0" note="有预警范围提示 : 当前没启用"/>
+    <item name="cd" type="uint" defaultVar="0" note="技能cd : 技能的冷却时间，技能释放一次后再次释放的时间（普通攻击的技能这个cd是没有用的）"/>
+    <item name="cdStart" type="uint" defaultVar="0" note="技能初始cd : 战斗开始后第一次使用该技能的时间"/>
+    <item name="hitCount" type="uint" defaultVar="0" note="允许点击施放次数 : 点多少次以后该技能进入CD"/>
+    <item name="hitTime" type="uint" defaultVar="0" note="允许点击的时间区间 : 类似PA的B技能，持续3秒或4次攻击(毫秒)"/>
+    <item name="hitCd" type="uint" defaultVar="0" note="每次点击的间隔CD : 此字段已废(毫秒)"/>
+    <item name="loop" type="int" defaultVar="0" note="技能循环持续次数 : 是否为循环施法技能，如果是则该技能释放时会重复动作中的循环序列,-1-不循环,0-无限循环,其他数字标识循环次数"/>
+    <item name="loopTime" type="uint" defaultVar="0" note="循环执行的单次时间 : 美术提供(毫秒)"/>
+    <item name="specialType" type="uint" defaultVar="0" note="技能特殊效果类型 : 0普通，1冲锋，2竖向激光，3旋风斩，4横向激光，5定点冲锋"/>
+    <item name="death" type="Boolean" defaultVar="false" note="死亡时触发 : 0否1是"/>
+    <item name="freezeType" type="uint" defaultVar="0" note="技能释放定格动画类型 : 后4个为新加字段，照填就行"/>
+    <item name="freezeShockStart" type="uint" defaultVar="0" note="技能释放定格动震动延后时间(毫秒)"/>
+    <item name="freezeShockLength" type="uint" defaultVar="0" note="技能释放定格动震动时长(毫秒)"/>
+    <item name="freezeShockType" type="uint" defaultVar="0" note="技能释放定格动震动类型 : 1小震动，2中震动，3大震动"/>
+    <item name="goalUseType" type="uint" defaultVar="0" note="是否使用动作表的目标类型 : 0否1是，填1则使用技能动作表中的目标类型"/>
+    <item name="bigEffect" type="int" defaultVar="0" note="技能定格特效 : 0,没有,-1超大定格动画(不受位置控制),大于0,特定的U2"/>
+    <item name="bigEffectPos" type="uint" defaultVar="0" note="定格特效位置 : 0,不跟踪,1,锁定释放者位置,2,锁定目标位置释放"/>
+    <item name="AttacksGround" type="Boolean" defaultVar="false" note="是否对地 : 攻击是否对地面单位有效"/>
+    <item name="AttacksAir" type="Boolean" defaultVar="false" note="是否对空 : 攻击是否对空中单位有效"/>
+    <item name="AttacksBuildings" type="Boolean" defaultVar="false" note="是否对建筑 : 攻击目标是否对建筑"/>
+    <item name="AttacksBases" type="Boolean" defaultVar="false" note="是否对基地 : 攻击目标是否对基地"/>
+	<item name="startUp" type="Boolean" defaultVar="false" note="启动技能 : 英雄初始化的时候自动释放的技能"/>
+  </varsList>
+</data>

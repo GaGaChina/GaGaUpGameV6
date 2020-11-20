@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="HeroGeneralSkillModel" packageUrl="cn.wjj.upgame.data" note="英雄通用技能表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="card_id" type="uint" defaultVar="0" note="卡牌ID" pointer="1"/>
+    <item name="skill1_cd" type="uint" defaultVar="0" note="技能1CD降低值"/>
+    <item name="skill2_cd" type="uint" defaultVar="0" note="技能2CD降低值"/>
+    <item name="reborn_time" type="uint" defaultVar="0" note="复活时间"/>
+    <item name="recover_speed" type="uint" defaultVar="0" note="回血速度"/>
+    <item name="exp_increase" type="uint" defaultVar="0" note="经验增量"/>
+  </varsList>
+</data>

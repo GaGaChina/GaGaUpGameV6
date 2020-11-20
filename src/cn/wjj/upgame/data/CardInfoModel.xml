@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="CardInfoModel" packageUrl="cn.wjj.upgame.data" note="卡牌信息表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="card_id" type="uint" defaultVar="0" note="卡牌id" pointer="1"/>
+    <item name="Cname" type="uint" defaultVar="0" note="卡牌名称id"/>
+    <item name="Cdescribe" type="uint" defaultVar="0" note="卡牌描述id"/>
+    <item name="CImage" type="uint" defaultVar="0" note="图片资源id"/>
+    <item name="CardType" type="uint" defaultVar="0" note="卡牌类型:1.部队 2.法术 3.建筑"/>
+    <item name="CardLevel" type="uint" defaultVar="0" note="卡牌的等级"/>
+    <item name="SummonCharacter" type="uint" defaultVar="0" note="召唤角色id"/>
+    <item name="SummonNumber" type="uint" defaultVar="0" note="召唤数量"/>
+    <item name="SpellSkill" type="uint" defaultVar="0" note="召唤技能ID"/>
+    <item name="UnlockArena" type="uint" defaultVar="0" note="解锁战场"/>
+    <item name="Cquality" type="uint" defaultVar="0" note="品质"/>
+    <item name="ManaCost" type="uint" defaultVar="0" note="卡牌的使用费用"/>
+    <item name="Cexpclass" type="uint" defaultVar="0" note="经验类别"/>
+    <item name="LevelUp" type="uint" defaultVar="0" note="卡牌是否可升级"/>
+    <item name="Crelationship" type="uint" defaultVar="0" note="关系类型标识,卡牌是否是同一张卡"/>
+    <item name="LockedImage" type="uint" defaultVar="0" note="解锁前的图标类型，1为正常，2为问号"/>
+  </varsList>
+</data>

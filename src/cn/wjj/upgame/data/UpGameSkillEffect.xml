@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="UpGameSkillEffect" packageUrl="cn.wjj.upgame.data" note="UpGame技能效果数据" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="id" type="uint" defaultVar="0" note="技能作用效果id" pointer="1"/>
+    <item name="effectTarget" type="uint" defaultVar="0" note="有效目标 : 表示该技能会对什么样的目标产生效果 1-全体，2-友方，3-敌方，4-自己，5-坐标点"/>
+    <item name="type" type="uint" defaultVar="0" note="作用类型 : 0-普通（作用一次的技能），1-持续产生效果的作用（燃烧弹），2-产生状态的作用，"/>
+    <item name="count" type="uint" defaultVar="0" note="作用次数 : 只有在持续产生效果与状态的作用时该字段才会生效，表示一个持续生效的技能会生效的次数；"/>
+    <item name="perTime" type="uint" defaultVar="0" note="作用时间 : 只有在持续产生效果与状态的作用时该字段才会生效，表示持续生效的间隔；间隔X次数=持续时间"/>
+    <item name="rangeType" type="uint" defaultVar="0" note="范围类型 : 0-锁定范围，锁定性的技能，1-范围技能（只有圆形）；注：状态类技能没有范围；对激光无效"/>
+    <item name="rangeR" type="uint" defaultVar="0" note="范围半径 : 爆炸后该技能的范围半径，对激光无效"/>
+    <item name="hitEffect" type="uint" defaultVar="0" note="击中特效 : 根据作用类型确定特效播放的次数与位置，普通作用时以爆炸点为中心时播放一次；持续范围的作用以爆炸点为中心循环播放的特效；状态作用时以目标中心点为中心持续播放的特效；"/>
+    <item name="hitType" type="uint" defaultVar="0" note="击飞类型 : 击飞填像素,不击飞填0"/>
+    <item name="isStop" type="Boolean" defaultVar="false" note="是否会被定住（冰冻等） : 0否1是"/>
+    <item name="isStun" type="Boolean" defaultVar="false" note="是否会被眩晕 : 0否1是"/>
+    <item name="effectLinkMove" type="uint" defaultVar="0" note="是否跟随目标移动 : 一般都填1"/>
+    <item name="effectLinkScale" type="uint" defaultVar="0" note="是否根据目标进行缩放 : 一般都填1"/>
+    <item name="effectListId" type="uint" defaultVar="0" note="持续产生效果的击中特效 : 只有“作用类型”为1时，该字段有效，0和2无效"/>
+    <item name="effectListLinkMove" type="uint" defaultVar="0" note="持续产生效果的击中特效是否跟随目标移动 : 一般都填1"/>
+    <item name="effectListLinkScale" type="uint" defaultVar="0" note="持续产生效果的击中特效是否根据目标进行缩放 : 一般都填1"/>
+    <item name="hitId" type="uint" defaultVar="0" note="命中公式id : 挂接3个命中公式：1-必中，2-普通，3-封印，5-固定几率"/>
+    <item name="hit" type="int" defaultVar="0" note="命中初始值"/>
+    <item name="hitUp" type="uint" defaultVar="0" note="命中升级增量"/>
+    <item name="critId" type="uint" defaultVar="0" note="暴击公式id : 10-不暴击，11-一般暴击，12-治疗暴击"/>
+    <item name="crit" type="int" defaultVar="0" note="暴击率初始值 : 百分比10000"/>
+    <item name="critUp" type="uint" defaultVar="0" note="暴击率升级增量 : 百分比10000"/>
+    <item name="critHurt" type="int" defaultVar="0" note="暴击伤害初始值"/>
+    <item name="critHurtUp" type="uint" defaultVar="0" note="附加暴击伤害增量"/>
+    <item name="effectId" type="uint" defaultVar="0" note="效果公式id : 13战斗系统（战斗规则，主动技能释放）—战斗技能说明1"/>
+    <item name="attributeType" type="uint" defaultVar="0" note="改变属性id : （1-攻击(秒伤)，2-攻击速度，3-移动速度，4-防御，5-攻击增强，6-治疗增强，7-防御比例，8-被治疗增强，9命中，10-回避，11-暴击，12-暴击伤害，13-韧性，14-暴击抵抗，15-封命，16-封抗，22-视野范围）"/>
+    <item name="effectX" type="int" defaultVar="0" note="效果倍率初始值 : 这个值是已经乘过10000的"/>
+    <item name="effectXUp" type="uint" defaultVar="0" note="效果倍率升级增量 : 召唤物存活时间,单位ms"/>
+    <item name="effect" type="int" defaultVar="0" note="效果偏移初始值 : 移动速度为像素单位"/>
+    <item name="effectUp" type="uint" defaultVar="0" note="效果偏移升级增量"/>
+    <item name="buffDel" type="uint" defaultVar="0" note="删除目标状态类型1 : 该子弹击中目标后会移除的状态类型（例如可以治疗中毒的技能）"/>
+    <item name="buffClear" type="uint" defaultVar="0" note="删除全部状态 : 填1有效，增益和减益全部删除"/>
+    <item name="buffType" type="uint" defaultVar="0" note="状态类型 : 该技能状态类型"/>
+    <item name="hatred" type="uint" defaultVar="0" note="仇恨系数 : 近战50000，冲锋50000，其他10000"/>
+    <item name="AttacksGround" type="Boolean" defaultVar="false" note="是否对地 : 效果是否对地面单位起作用"/>
+    <item name="AttacksAir" type="Boolean" defaultVar="false" note="是否对空 : 效果是否对空中单位起作用"/>
+    <item name="AttacksBuildings" type="Boolean" defaultVar="false" note="是否对建筑 : 效果目标是否对建筑起作用"/>
+    <item name="AttacksBases" type="Boolean" defaultVar="false" note="是否对基地 : 效果目标是否对基地起作用"/>
+    <item name="SpawnID" type="uint" defaultVar="0" note="召唤物ID : 当卡牌是技能时(即无模型时)，召唤出的怪物id，比如：哥布林桶"/>
+  </varsList>
+</data>

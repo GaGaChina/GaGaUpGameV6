@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="UpGameWarMap" packageUrl="cn.wjj.upgame.data" note="UpGame关卡地图表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="id" type="uint" defaultVar="0" note="战场ID" pointer="1"/>
+    <item name="mapId" type="uint" defaultVar="0" note="地图ID"/>
+	<item name="music" type="uint" defaultVar="0" note="音乐"/>
+    <item name="y1" type="int" defaultVar="0" note="剧情y坐标1"/>
+    <item name="y2" type="int" defaultVar="0" note="剧情y坐标2"/>
+    <item name="player1" type="int" defaultVar="0" note="剧情出现点1 : 初始点"/>
+    <item name="player2" type="int" defaultVar="0" note="剧情出现点2"/>
+    <item name="player3" type="int" defaultVar="0" note="剧情出现点3"/>
+    <item name="player4" type="int" defaultVar="0" note="剧情出现点4 : 初始点好友位置"/>
+    <item name="storyBegin" type="uint" defaultVar="0" note="战前剧情ID : 如果有,要走到后面起始点"/>
+    <item name="blackscreen" type="Boolean" defaultVar="false" note="黑屏"/>
+    <item name="battleY1" type="int" defaultVar="0" note="战斗y坐标1"/>
+    <item name="battleY2" type="int" defaultVar="0" note="战斗y坐标2"/>
+	<item name="viewTopY" type="int" defaultVar="0" note="战斗上面y轴可视范围"/>
+	<item name="viewBottomY" type="int" defaultVar="0" note="战斗下面y轴可视范围"/>
+    <item name="battlePlayer1" type="int" defaultVar="0" note="战斗出现点1 : 战斗点"/>
+    <item name="battlePlayer2" type="int" defaultVar="0" note="战斗出现点2"/>
+    <item name="battlePlayer3" type="int" defaultVar="0" note="战斗出现点3"/>
+    <item name="battlePlayer4" type="int" defaultVar="0" note="战斗出现点4"/>
+    <item name="storyFinish" type="uint" defaultVar="0" note="战后剧情ID"/>
+	<item name="storyFail" type="uint" defaultVar="0" note="失败剧情"/>
+	<item name="numMax" type="uint" defaultVar="0" note="阵容2方召唤同场景的最大数量"/>
+  </varsList>
+</data>

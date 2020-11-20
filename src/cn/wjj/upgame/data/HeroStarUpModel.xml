@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="HeroStarUpModel" packageUrl="cn.wjj.upgame.data" note="英雄升星数据表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="HeroID" type="uint" defaultVar="0" note="英雄id" pointer="1"/>
+    <item name="Star" type="uint" defaultVar="0" note="星级"/>
+    <item name="StarExp" type="uint" defaultVar="0" note="星级经验"/>
+    <item name="AddHP" type="uint" defaultVar="0" note="增加HP"/>
+    <item name="AddAttack" type="uint" defaultVar="0" note="增加攻击"/>
+    <item name="UnlockSkill" type="uint" defaultVar="0" note="解锁技能"/>
+  </varsList>
+</data>

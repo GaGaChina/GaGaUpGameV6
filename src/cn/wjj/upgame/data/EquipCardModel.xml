@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="EquipCardModel" packageUrl="cn.wjj.upgame.data" note="装备数据表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="Id" type="uint" defaultVar="0" note="装备id" pointer="1"/>
+    <item name="Name" type="uint" defaultVar="0" note="装备名称语言包ID"/>
+    <item name="describe" type="uint" defaultVar="0" note="装备描述语言包ID"/>
+    <item name="Image" type="String" defaultVar="" note="图片资源地址"/>
+    <item name="tupoLV" type="uint" defaultVar="0" note="装备的突破等级"/>
+    <item name="quality" type="uint" defaultVar="0" note="星级"/>
+    <item name="Type" type="uint" defaultVar="0" note="类别"/>
+    <item name="typedec" type="uint" defaultVar="0" note="装备类型描述"/>
+    <item name="Lvcap" type="uint" defaultVar="0" note="等级上限"/>
+    <item name="stype" type="uint" defaultVar="0" note="该卡牌升级时所使用的花费类别"/>
+    <item name="selltype" type="uint" defaultVar="0" note="该装备出售时所使用的价格类型，价格类型读取表“卡牌升级经验表”"/>
+    <item name="Att" type="uint" defaultVar="0" note="攻击"/>
+    <item name="rate" type="uint" defaultVar="0" note="攻击频率"/>
+    <item name="def" type="uint" defaultVar="0" note="装备的初始防御"/>
+    <item name="Hp" type="uint" defaultVar="0" note="生命"/>
+    <item name="attsp" type="uint" defaultVar="0" note="装备的初始攻击速度"/>
+    <item name="Sp" type="uint" defaultVar="0" note="速度"/>
+    <item name="Hit" type="uint" defaultVar="0" note="命中"/>
+    <item name="dod" type="uint" defaultVar="0" note="回避"/>
+    <item name="seal" type="uint" defaultVar="0" note="封命"/>
+    <item name="sealres" type="uint" defaultVar="0" note="封抗"/>
+    <item name="lethality" type="uint" defaultVar="0" note="致命率"/>
+    <item name="tenacity" type="uint" defaultVar="0" note="韧性"/>
+    <item name="Finjury" type="uint" defaultVar="0" note="致命伤害值"/>
+    <item name="finjuryres" type="uint" defaultVar="0" note="装备的初始致命伤害减免值"/>
+    <item name="attX" type="uint" defaultVar="0" note="物攻增强"/>
+    <item name="HpX" type="uint" defaultVar="0" note="生命增强"/>
+    <item name="attspX" type="uint" defaultVar="0" note="攻速修正"/>
+    <item name="cureX" type="uint" defaultVar="0" note="治疗增强"/>
+    <item name="defx" type="uint" defaultVar="0" note="装备的初始防御比例"/>
+    <item name="betreated" type="uint" defaultVar="0" note="被治疗增强"/>
+    <item name="reboundrate" type="uint" defaultVar="0" note="装备的初始反震比例"/>
+    <item name="rebound" type="uint" defaultVar="0" note="反震效果"/>
+    <item name="regenerationrate" type="uint" defaultVar="0" note="再生率"/>
+    <item name="regenerationvalue" type="uint" defaultVar="0" note="再生值"/>
+    <item name="proportion" type="uint" defaultVar="0" note="吸血比例"/>
+    <item name="initialcdreduce1" type="uint" defaultVar="0" note="技能1初始cd降低值"/>
+    <item name="initialcdreduce2" type="uint" defaultVar="0" note="技能2初始cd降低值"/>
+    <item name="initialcdreduce3" type="uint" defaultVar="0" note="技能3初始cd降低值"/>
+    <item name="initialcdreduce4" type="uint" defaultVar="0" note="技能4初始cd降低值"/>
+    <item name="cdreduce1" type="uint" defaultVar="0" note="技能1cd降低值"/>
+    <item name="cdreduce2" type="uint" defaultVar="0" note="技能2cd降低值"/>
+    <item name="cdreduce3" type="uint" defaultVar="0" note="技能3cd降低值"/>
+    <item name="cdreduce4" type="uint" defaultVar="0" note="技能4cd降低值"/>
+    <item name="attXnum" type="uint" defaultVar="0" note="攻击增量"/>
+    <item name="defnum" type="uint" defaultVar="0" note="防御"/>
+    <item name="hpXnum" type="uint" defaultVar="0" note="生命增量"/>
+    <item name="attspnum" type="uint" defaultVar="0" note="攻击速度增量"/>
+    <item name="Spxnum" type="uint" defaultVar="0" note="速度增量"/>
+    <item name="Hitxnum" type="uint" defaultVar="0" note="命中增量"/>
+    <item name="Dodxnum" type="uint" defaultVar="0" note="回避增量"/>
+    <item name="Sealxnum" type="uint" defaultVar="0" note="封命增量"/>
+    <item name="Sealresxnum" type="uint" defaultVar="0" note="封抗增量"/>
+    <item name="Lethalityxnum" type="uint" defaultVar="0" note="致命率增量"/>
+    <item name="Tenacityxnum" type="uint" defaultVar="0" note="韧性增量"/>
+    <item name="Finjuryxnum" type="uint" defaultVar="0" note="致命值增量"/>
+    <item name="finjuryresnum" type="uint" defaultVar="0" note="暴击抵抗增量"/>
+    <item name="attXxnum" type="uint" defaultVar="0" note="物攻增强增量"/>
+    <item name="HpXxnum" type="uint" defaultVar="0" note="生命增强增量"/>
+    <item name="attspXnum" type="uint" defaultVar="0" note="攻速修正增量"/>
+    <item name="cureXxnum" type="uint" defaultVar="0" note="治疗增强增量"/>
+    <item name="defxnum" type="uint" defaultVar="0" note="防御比例增量"/>
+    <item name="betreatedxnum" type="uint" defaultVar="0" note="被治疗增强增量"/>
+    <item name="reboundratenum" type="uint" defaultVar="0" note="反震比例增量"/>
+    <item name="reboundxnum" type="uint" defaultVar="0" note="反震效果增量"/>
+    <item name="Regenerationratexnum" type="uint" defaultVar="0" note="再生率增量"/>
+    <item name="Regenerationvaluexnum" type="uint" defaultVar="0" note="再生值增量"/>
+    <item name="Proportionxnum" type="uint" defaultVar="0" note="吸血比例增量"/>
+    <item name="initialcdreduce1num" type="uint" defaultVar="0" note="技能1初始cd降低值增量"/>
+    <item name="initialcdreduce2num" type="uint" defaultVar="0" note="技能2初始cd降低值增量"/>
+    <item name="initialcdreduce3num" type="uint" defaultVar="0" note="技能3初始cd降低值增量"/>
+    <item name="initialcdreduce4num" type="uint" defaultVar="0" note="技能4初始cd降低值增量"/>
+    <item name="cdreduce1num" type="uint" defaultVar="0" note="技能1cd降低值增量"/>
+    <item name="cdreduce2num" type="uint" defaultVar="0" note="技能2cd降低值增量"/>
+    <item name="cdreduce3num" type="uint" defaultVar="0" note="技能3cd降低值增量"/>
+    <item name="cdreduce4num" type="uint" defaultVar="0" note="技能4cd降低值增量"/>
+    <item name="relationship2" type="uint" defaultVar="0" note="关系类型标识"/>
+    <item name="jinhua" type="uint" defaultVar="0" note="是否可进阶"/>
+    <item name="tujianno" type="uint" defaultVar="0" note="图鉴与查看装备显示用" pointer="1"/>
+    <item name="job" type="uint" defaultVar="0" note="职业限制" pointer="1"/>
+    <item name="cardlv" type="uint" defaultVar="0" note="卡牌等级限制" pointer="1"/>
+    <item name="model" type="uint" defaultVar="0" note="机甲的模型id"/>
+    <item name="exp" type="uint" defaultVar="0" note="提供的经验值"/>
+    <item name="zskill1" type="uint" defaultVar="0" note="主动技能1id"/>
+    <item name="zskill2" type="uint" defaultVar="0" note="主动技能2id"/>
+    <item name="unique" type="uint" defaultVar="0" note="机甲判断是否是同一的标准，重复获得同一机甲系统自动分解"/>
+    <item name="describe1" type="uint" defaultVar="0" note="机甲碎片的产出描述"/>
+    <item name="same" type="uint" defaultVar="0" note="芯片判断是否是同一属性芯片的标准，同一属性芯片一个角色只能同时装备一个，同一属性的芯片填写相同的数字"/>
+    <item name="describe2" type="uint" defaultVar="0" note="机甲的攻击类型描述"/>
+    <item name="Image1" type="String" defaultVar="" note="机甲大图"/>
+    <item name="Cloot11" type="uint" defaultVar="0" note="产出关卡类型1 : 角色碎片关联的关卡类型，用作跳转碎片掉落的关卡用"/>
+    <item name="Cloot12" type="uint" defaultVar="0" note="产出大关id1 : 关联的大关id"/>
+    <item name="Cloot13" type="uint" defaultVar="0" note="产出小关id1 : 关联的小关id"/>
+    <item name="Cloot21" type="uint" defaultVar="0" note="产出关卡类型2"/>
+    <item name="Cloot22" type="uint" defaultVar="0" note="产出大关id2"/>
+    <item name="Cloot23" type="uint" defaultVar="0" note="产出小关id2"/>
+    <item name="Cloot31" type="uint" defaultVar="0" note="产出关卡类型3"/>
+    <item name="Cloot32" type="uint" defaultVar="0" note="产出大关id3"/>
+    <item name="Cloot33" type="uint" defaultVar="0" note="产出小关id3"/>
+    <item name="Cloot41" type="uint" defaultVar="0" note="产出关卡类型4"/>
+    <item name="Cloot42" type="uint" defaultVar="0" note="产出大关id4"/>
+    <item name="Cloot43" type="uint" defaultVar="0" note="产出小关id4"/>
+    <item name="displaylv" type="uint" defaultVar="0" note="子机技能显示等级"/>
+  </varsList>
+</data>

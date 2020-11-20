@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="HeroSkillModel" packageUrl="cn.wjj.upgame.data" note="英雄技能表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="HeroID" type="uint" defaultVar="0" note="英雄关系标识ID" pointer="1"/>
+    <item name="Skill1" type="uint" defaultVar="0" note="技能1-关系标识"/>
+    <item name="Skill2" type="uint" defaultVar="0" note="技能2-关系标识"/>
+    <item name="Skill3" type="uint" defaultVar="0" note="技能3-关系标识"/>
+    <item name="Skill4" type="uint" defaultVar="0" note="技能4-关系标识"/>
+  </varsList>
+</data>

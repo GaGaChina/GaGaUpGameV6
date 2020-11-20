@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <classSet name="InfoRoleCardModel" packageUrl="cn.wjj.upgame.data" note="用户卡牌信息表" allData="UpGame" groupName=""/>
+  <varsList>
+    <item name="planId" type="uint" defaultVar="0" note="卡在策划文档ID号" pointer="1"/>
+    <item name="serverId" type="uint" defaultVar="0" note="卡在服务器的ID号" pointer="1"/>
+    <item name="level" type="uint" defaultVar="0" note="卡牌等级"/>
+    <item name="Pstr" type="int" defaultVar="0" note="潜能点力量"/>
+    <item name="Pphy" type="int" defaultVar="0" note="潜能点体制"/>
+    <item name="Pagi" type="int" defaultVar="0" note="潜能点敏捷"/>
+    <item name="potential" type="uint" defaultVar="0" note="潜力点"/>
+    <item name="exp" type="uint" defaultVar="0" note="经验值"/>
+    <item name="protect" type="Boolean" defaultVar="false" note="是否被保护"/>
+    <item name="equipIDList" type="Array" defaultVar="new Array()" note="装备的ID列表,0-武器，1-帽子，2-衣服，3-鞋子"/>
+    <item name="skillIDList" type="Array" defaultVar="new Array()" note="被动技能ID列表"/>
+    <item name="zhenFaSkillsId" type="uint" defaultVar="0" note="阵法技能id"/>
+    <item name="zhenFaSkillCanStudysId" type="uint" defaultVar="0" note="可以学习阵法技能id"/>
+    <item name="normalSkillLv" type="uint" defaultVar="0" note="普通主动技能等级"/>
+    <item name="activeSkillLv" type="uint" defaultVar="0" note="第一个主动技能等级"/>
+    <item name="activeSkill2Lv" type="uint" defaultVar="0" note="第二个主动技能等级"/>
+    <item name="activeSkill3Lv" type="uint" defaultVar="0" note="第三个主动技能等级"/>
+    <item name="activeSkill4Lv" type="uint" defaultVar="0" note="第四个主动技能等级"/>
+    <item name="attack" type="uint" defaultVar="0" note="攻击"/>
+    <item name="defence" type="uint" defaultVar="0" note="防御"/>
+    <item name="health" type="uint" defaultVar="0" note="生命"/>
+    <item name="rate" type="uint" defaultVar="0" note="攻击速度"/>
+    <item name="speed" type="uint" defaultVar="0" note="移动速度"/>
+    <item name="hit" type="uint" defaultVar="0" note="命中"/>
+    <item name="dodge" type="uint" defaultVar="0" note="闪避"/>
+    <item name="sealHit" type="uint" defaultVar="0" note="封印命中"/>
+    <item name="sealDodge" type="uint" defaultVar="0" note="封印闪避"/>
+    <item name="lethality" type="uint" defaultVar="0" note="暴击率"/>
+    <item name="tenacity" type="uint" defaultVar="0" note="韧性"/>
+    <item name="finjury" type="uint" defaultVar="0" note="暴击伤害"/>
+    <item name="finjuryres" type="uint" defaultVar="0" note="暴击抵抗"/>
+    <item name="attX" type="uint" defaultVar="0" note="攻击增强"/>
+    <item name="hpX" type="uint" defaultVar="0" note="生命增强"/>
+    <item name="rateX" type="uint" defaultVar="0" note="攻速修正"/>
+    <item name="cureX" type="uint" defaultVar="0" note="治疗增强"/>
+    <item name="defX" type="uint" defaultVar="0" note="防御比例"/>
+    <item name="betreated" type="uint" defaultVar="0" note="被治疗比例"/>
+    <item name="reboundrate" type="uint" defaultVar="0" note="反震比例"/>
+    <item name="rebound" type="uint" defaultVar="0" note="反震值"/>
+    <item name="regenerationrate" type="uint" defaultVar="0" note="再生率"/>
+    <item name="regenerationValue" type="uint" defaultVar="0" note="再生值"/>
+    <item name="proportion" type="uint" defaultVar="0" note="吸血比例"/>
+    <item name="str" type="uint" defaultVar="0" note="力量"/>
+    <item name="magic" type="uint" defaultVar="0" note="魔力"/>
+    <item name="phy" type="uint" defaultVar="0" note="体制"/>
+    <item name="agi" type="uint" defaultVar="0" note="敏捷"/>
+    <item name="equipPIDList" type="Array" defaultVar="new Array()" note="装备的ID列表,0,饰品1,头部,2,腰带,3,武器,4,盔甲,5,鞋子"/>
+    <item name="equipPIDLeverList" type="Array" defaultVar="new Array()" note="装备的等级"/>
+    <item name="initialcdreduce1" type="int" defaultVar="0" note="技能1初始cd降低值"/>
+    <item name="initialcdreduce2" type="int" defaultVar="0" note="技能2初始cd降低值"/>
+    <item name="initialcdreduce3" type="int" defaultVar="0" note="技能3初始cd降低值"/>
+    <item name="initialcdreduce4" type="int" defaultVar="0" note="技能4初始cd降低值"/>
+    <item name="cdreduce1" type="int" defaultVar="0" note="技能1cd降低值"/>
+    <item name="cdreduce2" type="int" defaultVar="0" note="技能2cd降低值"/>
+    <item name="cdreduce3" type="int" defaultVar="0" note="技能3cd降低值"/>
+    <item name="cdreduce4" type="int" defaultVar="0" note="技能4cd降低值"/>
+    <item name="chipIDList" type="Array" defaultVar="new Array()" note="芯片子机的ID列表,0-芯片，1-芯片，2-子机"/>
+    <item name="chipCount" type="int" defaultVar="0" note="卡牌子机格子数"/>
+    <item name="secAttack" type="uint" defaultVar="0" note="秒伤,角色属性显示时用,避免计算误差显示问题"/>
+    <item name="cardStar" type="uint" defaultVar="0" note="卡牌星级"/>
+    <item name="activeSkill5Lv" type="uint" defaultVar="0" note="第五个主动技能等级"/>
+  </varsList>
+</data>
